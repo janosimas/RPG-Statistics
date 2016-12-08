@@ -9,13 +9,13 @@ def roll(dices = 6):
   return values
 
 def roll_easy():
-  return 1 if roll(7) > 10 else 0
+  return 1 if len(success(roll())) > 1 else 0
 
 def roll_average():
-  return 1 if roll(7) > 15 else 0
+  return 1 if len(success(roll())) > 2 else 0
 
 def roll_hard():
-  return 1 if roll(7) > 20 else 0
+  return 1 if len(success(roll())) > 3 else 0
 
 
 def success(values):

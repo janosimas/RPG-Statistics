@@ -1,6 +1,7 @@
 import modules.d20 as d20
 import modules.fate as fate
 import modules.gurps as gurps
+import modules.seventh_sea as seventh_sea
 
 from scipy import stats
 
@@ -8,6 +9,7 @@ modules = []
 modules.append(d20)
 modules.append(fate)
 modules.append(gurps)
+modules.append(seventh_sea)
 
 for module in modules:
     print(module.name())
